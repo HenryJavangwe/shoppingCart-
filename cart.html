@@ -6,14 +6,15 @@
     <title>The Maven Academy</title>
     <link rel="icon" href="./img/favicon.ico">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-     <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
-     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Titillium+Web&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
 </head>
 
 <body class="">
     <!-- Header-Navbar -->
-    <header class="c">
+    <header class="mb-5">
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="./index.html"><img src="./img/Fav icon.png" alt=""></a>
@@ -33,63 +34,21 @@
         </nav>
     </header>
     <!-- This is where my main container starts and I have different sections and divs inside it  -->
-    <main class="mt-5">
-        <section class="container">
-            <section class="row">
-                <!-- Course 1 Full Stack Web Dev -->
-                <article class="col-lg-4 col-md-6 col-sm-12 ">
-                    <div class="card pt-5 px-2 text-center align-self-center" id="course-cards">
-                        <div>
-                            <h6 >Become a Full Stack Web Developer </h6>
-                            <p>12 Week Course - In classroom </p>
-                        </div>
-                        <img src="./img/webdeveloper.png" class="card-img-top align-self-center alt="" style="width: 210px; height: 210px;">
-                        <div class="card-body">
-                            <h5 class="card-title font-weight-bold">R26,000,00 Excl Vat</h5>
-                            <p class="card-text">
-                            <a href="./assets/course details/web-dev-detail.html" class="btn btn-primary">
-                                View course detail
-                            </a>
-                            </p>
-                        </div>
-                    </div>
-                </article>
-                <!-- Course 2 Front End Dev -->
-                <article class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="card pt-5 text-center" id="course-cards">
-                        <h6 >Become a Front End Web Developer  </h6>
-                        <p> 4 Week Course - In classroom </p>
-                        <img src="./img/frontend-dev.png" class="card-img-top align-self-center" alt="..." style="width: 210px; height: 210px;">
-                        <div class="card-body">
-                            <h5 class="card-title font-weight-bold">R9,000,00 Excl Vat</h5>
-                            <p class="card-text">
-                                <a href="./assets/course details/front-end-detail.html" class="btn btn-primary">
-                                    View course detail
-                                </a>
-                            </p>
-                        </div>
-                      </div>
-                </article>
-                <!-- Course 3 Java Spring Boot Developer -->
-                <article class="col-lg-4 col-md-6 col-sm-12 ">
-                    <div class="card pt-5 text-center" id="course-cards">
-                        <h6 >Become a Java Spring Boot Developer </h6>
-                        <p> 12 Week Course - In classroom </p>
-                        <img src="./img/spring-boot-dev.png" class="card-img-top align-self-center" alt="..." style="width: 210px; height: 210px;">
-                        <div class="card-body">
-                            <h5 class="card-title font-weight-bold">R16,000,00 Excl Vat</h5>
-                            <p class="card-text">
-                                <a href="./assets/course details/java-springboot-detail.html" class="btn btn-primary">
-                                    View course detail
-                                </a>
-                            </p>
-                        </div> 
-                    </div>
-                </article>
-            </section>
-        </section>
+    <main class="mt-5 pt-5">
+        <!-- cart divisions -->
+        <div class="courses-container">
+            <div class="courses-header">
+                <h5 class="course-title">Course</h5>
+                <h5 class="price">Price</h5>
+                <h5 class="quantity">Quantity</h5>
+                <h5 class="total">Total</h5>
+            </div>
+            <!-- course-plug-in -->
+            <div class="course-plug-in">
+            </div>
+        </div>
     </main>
-    <!-- This is where I have my Footer container and all the elements inside it watch out -->
+    <!-- footer section -->
     <footer>
         <!-- Top Footer Elements -->
         <div class="Upper-footer">
@@ -154,10 +113,7 @@
             </div>
         </div>
         <!-- Lower Footer Elements -->
-        <div class="footer-bottom " style="
-        color: #ffffff;
-        background-color: #1f262d;
-        padding: 40px 0;">
+        <div class="footer-bottom">
             <div class="container">
                 <div class="row " >
                     <div class="col-md-9 align-self-center">
@@ -167,7 +123,7 @@
                     </div>
                     <div class="col-md-3 align-self-center">
                         <div class="social-media">
-                            <ul >
+                            <ul class=" " >
                                 <li>
                                     <a href="https://web.facebook.com/The-Maven-Academy-108366197273447/?modal=admin_todo_tour" target="_blank" class="d-flex ">
                                         <img src="./img/facebook.svg" alt="">
@@ -185,6 +141,7 @@
                                 </li>
                             </ul>
                         </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -195,9 +152,6 @@
 </script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
 </script>
-<script src="./js/scripts.js"></script>
-<script src="./assets/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
-<script src="./owl.js"></script>
-<script src="./assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+<script src="/js/scripts.js"></script>
 </body>
 </html>
