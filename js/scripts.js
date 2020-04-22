@@ -30,8 +30,14 @@ for ( let i =0; i< addToCart.length; i++){
    })
 //Writing a function that will set localStorage numbers to the total number of times the buttons with eventListener are clicked.
    function cartNumbers(){
-       let courseNumbers= localStorage.getItem('cartNumbers');//we are accessing the local storage and grabbing the contents.
+       let courseNumbers = localStorage.getItem('cartNumbers');//we are accessing the local storage and grabbing the contents.
        courseNumbers = parseInt(courseNumbers); //Numbers from the localStorage come as strings so we have to convert them to integers hence the parseInt;  
-       localStorage.setItem ('cartNumbers', 1);
+       if(courseNumbers){
+        localStorage.setItem('cartNumbers', courseNumbers+ 1);
+        document.querySelector('.basket span').textContent = courseNumbers+ 1;
+       } else{
+           localStorage.setItem('cartNumbers', 1);
+           document.querySelector('.basket span').textContent =1;
+       }
    }
 };
