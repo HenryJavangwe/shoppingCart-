@@ -90,8 +90,6 @@ for ( let i =0; i < addToCart.length; i++){
 cartNumberOnLoad();
 
 
-
-
 // function displayCart(){
 //     let cartItems = localStorage.getItem("coursesInCart");
 //     cartItems = JSON.parse(cartItems);
